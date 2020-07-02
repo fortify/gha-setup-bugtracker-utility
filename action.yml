@@ -1,0 +1,11 @@
+name: 'Setup Fortify Bug Tracker Utility'
+description: 'Setup Fortify Bug Tracker Utility'
+author: 'Ruud Senden'
+inputs:
+  version:
+    description: 'Fortify Bug Tracker Utility version to use'
+    required: true
+    default: 4.1
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
