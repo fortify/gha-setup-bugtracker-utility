@@ -14,9 +14,9 @@ steps:
 - uses: actions/setup-java@v1                 # Set up Java
   with:
     java-version: 1.8
-- uses: fortify-actions/setup-bugtracker-utility@v1 # Set up Fortify Bug Tracker Utility
+- uses: fortify/gha-setup-bugtracker-utility@v1 # Set up Fortify Bug Tracker Utility
   with:
-    version: latest                                 # Optional as 'latest' is the default
+    version: 4.1                                 # Optional as this is the default
 - env:
     FBTU_FODBASEURL: https://ams.fortify.com/
     FBTU_FODTENANT: MyTenant
