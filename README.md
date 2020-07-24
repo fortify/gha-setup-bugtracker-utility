@@ -1,6 +1,8 @@
 # Setup Fortify Bug Tracker Utility
 
-Build secure software fast with [Fortify](https://www.microfocus.com/en-us/solutions/application-security). Fortify offers end-to-end application security solutions with the flexibility of testing on-premises and on-demand to scale and cover the entire software development lifecycle. With Fortify, find security issues early and fix at the speed of DevOps. This GitHub Action sets up the Fortify Bug Tracker Utility for use in your GitHub workflows:
+Build secure software fast with [Fortify](https://www.microfocus.com/en-us/solutions/application-security). Fortify offers end-to-end application security solutions with the flexibility of testing on-premises and on-demand to scale and cover the entire software development lifecycle. With Fortify, find security issues early and fix at the speed of DevOps. 
+
+The Fortify Bug Tracker Utility syncronizes security issues between Fortify on Demand/Fortify Software Security Center and a wide range of defect management and GRC systems including Jira, ALM Octane, Archer, etc.  This GitHub Action sets up the Fortify Bug Tracker Utility for use in your GitHub workflows:
 * Downloads and caches the specified version of the Fortify Bug Tracker Utility distribution
 * Adds the `FBTU_JAR` environment variable containing the full path to the Fortify Bug Tracker Utility JAR file
 * Adds the `FBTU_DIR` environment variable containing the full path to the directory where the distribution zip file was extracted
@@ -8,6 +10,10 @@ Build secure software fast with [Fortify](https://www.microfocus.com/en-us/solut
 ## Usage
 
 ```yaml
+on:
+  schedule:
+    - cron:  '* 7,18 * * *'                   # Sync defects at defined interval
+
 steps:
 - uses: actions/setup-java@v1                 # Set up Java
   with:
