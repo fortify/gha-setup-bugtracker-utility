@@ -1,11 +1,9 @@
 # Setup Fortify Bug Tracker Utility
 
-This GitHub Action sets up the Fortify Bug Tracker Utility for use in your GitHub workflows:
+Build secure software fast with [Fortify](https://www.microfocus.com/en-us/solutions/application-security). Fortify offers end-to-end application security solutions with the flexibility of testing on-premises and on-demand to scale and cover the entire software development lifecycle. With Fortify, find security issues early and fix at the speed of DevOps. This GitHub Action sets up the Fortify Bug Tracker Utility for use in your GitHub workflows:
 * Downloads and caches the specified version of the Fortify Bug Tracker Utility distribution
 * Adds the `FBTU_JAR` environment variable containing the full path to the Fortify Bug Tracker Utility JAR file
 * Adds the `FBTU_DIR` environment variable containing the full path to the directory where the distribution zip file was extracted
-
-See https://github.com/fortify-ps/FortifyBugTrackerUtility for more information about Fortify Bug Tracker Utility.
 
 ## Usage
 
@@ -19,7 +17,7 @@ steps:
     version: 4.1                                 # Optional as this is the default
 - env:
     FBTU_FODBASEURL: https://ams.fortify.com/
-    FBTU_FODTENANT: MyTenant
+    FBTU_FODTENANT: ${{ secrets.FOD_TENANT }}
     FBTU_FODUSERNAME: ${{ secrets.FOD_USER }}
     FBTU_FODPASSWORD: ${{ secrets.FOD_PAT }}
     FBTU_FODRELEASEID: 999999
@@ -36,7 +34,8 @@ The `-configFile` option can point to either one of the default configuration fi
 or a configuration file available elsewhere on the system or in your project workspace. For utility versions 4.1 and
 lower, command line options must be explicitly specified on the command line. Version 4.2 and up will support the 
 `FBTU_`-prefixed environment variables out of the box, so these will no longer need to be passed on the command line.
-Please see the Fortify Bug Tracker Utility documentation for more details.
+
+Please see the [Fortify Bug Tracker Utility documentation](https://github.com/fortify-ps/FortifyBugTrackerUtility) for more details.
 
 ## Inputs
 
