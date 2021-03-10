@@ -17,7 +17,7 @@ on:
 steps:
 - uses: actions/setup-java@v1                 # Set up Java
   with:
-    java-version: 1.8
+    java-version: 1.8                         # Bug tracker utility has been successfully tested with 1.8, other versions may also work
 - uses: fortify/gha-setup-bugtracker-utility@v1 # Set up Fortify Bug Tracker Utility
   with:
     version: 4.1                                 # Optional as this is the default
