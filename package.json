@@ -1,5 +1,5 @@
 {
-  "name": "setup-bugtracker-utility",
+  "name": "gha-setup-bugtracker-utility",
   "version": "1.0.0",
   "description": "GitHub Action for setting up Fortify Bug Tracker Utility",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fortify-actions/setup-bugtracker-utility.git"
+    "url": "git+https://github.com/fortify/gha-setup-bugtracker-utility.git"
   },
   "keywords": [
     "Fortify",
@@ -25,9 +25,9 @@
   "author": "Ruud Senden",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fortify-actions/setup-bugtracker-utility/issues"
+    "url": "https://github.com/fortify/gha-setup-bugtracker-utility/issues"
   },
-  "homepage": "https://github.com/fortify-actions/setup-bugtracker-utility#readme",
+  "homepage": "https://github.com/fortify/gha-setup-bugtracker-utility#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/tool-cache": "^1.6.1",
