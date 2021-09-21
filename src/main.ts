@@ -41,8 +41,8 @@ async function main(): Promise<void> {
     const toolJar = path.join(toolDir, `FortifyBugTrackerUtility-${version}.jar`);
     core.exportVariable('FBTU_JAR', toolJar);
     core.exportVariable('FBTU_DIR', toolDir);
-  } catch (error) {
-    core.setFailed(error.message);
+  } catch (err) {
+    core.setFailed("Action failed with error ${err}");
   } finally {
     core.endGroup();
   }
