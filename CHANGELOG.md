@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.0.1...v1.1.0) (2021-12-14)
+
+
+### Features
+
+* Update default version to 4.6 ([c5549c4](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/c5549c449d3e0e5fd057f30ee4b16aed75ac1313))
+
 ### [1.0.1](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.0.0...v1.0.1) (2021-09-21)
 
 
