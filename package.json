@@ -1,6 +1,6 @@
 {
   "name": "gha-setup-bugtracker-utility",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "GitHub Action for setting up Fortify Bug Tracker Utility",
   "main": "dist/index.js",
   "scripts": {
