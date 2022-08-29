@@ -7214,7 +7214,7 @@ function main() {
             core.exportVariable('FBTU_DIR', toolDir);
         }
         catch (err) {
-            core.setFailed("Action failed with error ${err}");
+            core.setFailed("Action failed with error: " + err);
         }
         finally {
             core.endGroup();

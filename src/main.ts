@@ -42,7 +42,7 @@ async function main(): Promise<void> {
     core.exportVariable('FBTU_JAR', toolJar);
     core.exportVariable('FBTU_DIR', toolDir);
   } catch (err) {
-    core.setFailed("Action failed with error ${err}");
+    core.setFailed("Action failed with error: "+err);
   } finally {
     core.endGroup();
   }
