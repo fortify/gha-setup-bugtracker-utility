@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.2.0...v1.3.0) (2022-08-29)
+
+
+### Features
+
+* Change default version to 4.10 ([edace8c](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/edace8ca2845d0ad5aa65e6f7e7541bde366409f))
+
+
+### Bug Fixes
+
+* Display actual error ([0aa2309](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/0aa2309eff5dca975dff5a0b5a04982913278330))
+* Update dependencies ([c7902a5](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/c7902a5102f52481e44a668a7f6d9184b68e64a7))
+
 ## [1.2.0](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.1.0...v1.2.0) (2021-12-15)
 
 
