@@ -35,7 +35,7 @@ async function getCachedRootDir(version: string): Promise<string> {
 
 async function main(): Promise<void> {
   try {
-    core.startGroup('Setup Fortify ScanCentral Client');
+    core.startGroup('Setup Fortify Bug Tracker Utility');
     const version = core.getInput(INPUT_VERSION);
     const toolDir = await getCachedRootDir(version);
     const toolJar = path.join(toolDir, `FortifyBugTrackerUtility-${version}.jar`);

@@ -7206,7 +7206,7 @@ function getCachedRootDir(version) {
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            core.startGroup('Setup Fortify ScanCentral Client');
+            core.startGroup('Setup Fortify Bug Tracker Utility');
             const version = core.getInput(INPUT_VERSION);
             const toolDir = yield getCachedRootDir(version);
             const toolJar = path.join(toolDir, `FortifyBugTrackerUtility-${version}.jar`);
