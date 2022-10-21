@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.3.1](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.3.0...v1.3.1) (2022-10-21)
+
+
+### Bug Fixes
+
+* Documentation: Show correct default version ([addf02e](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/addf02e48485b4cd20b8407dd0e9fe47127d5160))
+* Fix 'ScanCentral' being displayed rather than FortifyBugTrackerUtility ([9a5c997](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/9a5c997d82d54a3e4a0bb5a7495143be65f41b0d))
+* Fix GitHub NodeJS 12 deprecation warning ([50a1385](https://www.github.com/fortify/gha-setup-bugtracker-utility/commit/50a138504809b3d657b07a5d6c784c3c3378c7f0))
+
 ## [1.3.0](https://www.github.com/fortify/gha-setup-bugtracker-utility/compare/v1.2.0...v1.3.0) (2022-08-29)
 
 
