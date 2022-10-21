@@ -20,7 +20,7 @@ steps:
     java-version: 1.8                         # Bug tracker utility has been successfully tested with 1.8, other versions may also work
 - uses: fortify/gha-setup-bugtracker-utility@v1 # Set up Fortify Bug Tracker Utility
   with:
-    version: 4.1                                 # Optional as this is the default
+    version: 4.10                               # Optional as this is the default
 - env:
     FBTU_FODBASEURL: https://ams.fortify.com/
     FBTU_FODTENANT: ${{ secrets.FOD_TENANT }}
